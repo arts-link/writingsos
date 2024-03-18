@@ -1,0 +1,69 @@
+# !!! exampleSite only, set this to your own site URL
+baseURL= "https://www.writingsos.com/"
+languageCode= "en-us"
+title= "Writing SOS"
+theme= ["ryder"]
+summaryLength = 15
+enableRobotsTXT = true
+copyright = "©️ WritingSOS.com 2024"
+enableEmoji = true
+# paginate = 4
+
+[params]
+  # description = 'A theme for hugo'
+  # TocOpen = true
+  # UseHugoToc = true
+  # enabledebugpanel = true 
+  # navbar_fixed = true
+  showDarkToggle = true
+  logo_firstWord = 'Writing'
+  logo_lastWord = 'SOS'
+  # logo_tagline = "one-on-one online tutoring services"
+  logo_fontClass = 'font-titillium'
+  [params.author]
+    email = 'tutorwithkat@gmail.com'
+    name = 'Katherine Taylor'
+  [params.twClasses]
+    headerBackgroundFrameOuter = "bg-gradient-to-r from-slate-900 to-slate-700 border-b border-fuchsia-600 text-neutral-100"
+    # headerBackgroundFrameInner = "bg-header-sunset-mb h-[300px] bg-cover bg-left"
+# [menus]
+# [[menus.main]]
+#     name = 'Tags'
+#     pageRef = '/tags'
+#     parent = 'posts'
+#     weight = 9990
+# [[menus.footer]]
+#     name = 'File a Bug or Feature Request'
+#     URL = 'https://github.com/arts-link/ryder/issues/new/choose'
+#     rel = '_blank'
+#     weight = 10
+# [[menus.footer]]
+#     name = 'Contact Us'
+#     pageRef = '/contact'
+#     weight = 10
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = "0.121.1"
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "hugo_stats.json"
+    target = "assets/watching/hugo_stats.json"
+
+[build]
+  writeStats = true
+  [[build.cachebusters]]
+    source = "assets/watching/hugo_stats\\.json"
+    target = "styles\\.css"
+  [[build.cachebusters]]
+    source = "(postcss|tailwind)\\.config\\.js"
+    target = "css"
+  [[build.cachebusters]]
+    source = "assets/.*\\.(js|ts|jsx|tsx)"
+    target = "js"
+  [[build.cachebusters]]
+    source = "assets/.*\\.(.*)$"
+    target = "$1"
