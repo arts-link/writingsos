@@ -1,0 +1,6 @@
+[submodule "ryder"]
+	path = ryder
+	url = https://github.com/arts-link/ryder
+[submodule "themes/ryder"]
+	path = themes/ryder
+	url = https://github.com/arts-link/ryder

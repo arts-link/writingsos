@@ -1,0 +1,21 @@
+# Hugo
+public/
+resources/
+themes/ryder-dev
+*.log
+/node_modules
+
+# frontmatter
+.frontmatter/
+frontmatter.json
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Editor-specific
+.vscode/
+.idea/
