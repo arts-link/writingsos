@@ -2,7 +2,6 @@
 public/
 resources/
 themes/ryder-dev
-themes/
 *.log
 /node_modules
 
