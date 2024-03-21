@@ -1,6 +1,7 @@
 # !!! exampleSite only, set this to your own site URL
 baseURL= "https://www.writingsos.com/"
 languageCode= "en-us"
+locale= "en-us"
 title= "Writing SOS"
 theme= ["ryder"]
 summaryLength = 15
@@ -15,6 +16,7 @@ enableEmoji = true
   # UseHugoToc = true
   # enabledebugpanel = true 
   # navbar_fixed = true
+  description = 'Customized tutoring for writers of all ages & abilities'
   showDarkToggle = true
   logo_firstWord = 'Writing'
   logo_lastWord = 'SOS'
