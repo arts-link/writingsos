@@ -28,21 +28,6 @@ enableEmoji = true
   [params.twClasses]
     headerBackgroundFrameOuter = "bg-gradient-to-r from-slate-900 to-slate-700 border-b border-fuchsia-600 text-neutral-100"
     # headerBackgroundFrameInner = "bg-header-sunset-mb h-[300px] bg-cover bg-left"
-# [menus]
-# [[menus.main]]
-#     name = 'Tags'
-#     pageRef = '/tags'
-#     parent = 'posts'
-#     weight = 9990
-# [[menus.footer]]
-#     name = 'File a Bug or Feature Request'
-#     URL = 'https://github.com/arts-link/ryder/issues/new/choose'
-#     rel = '_blank'
-#     weight = 10
-# [[menus.footer]]
-#     name = 'Contact Us'
-#     pageRef = '/contact'
-#     weight = 10
 
 [module]
   [module.hugoVersion]
